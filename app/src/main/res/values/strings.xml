@@ -2,18 +2,18 @@
     <string name="app_name">MedIT</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="home_fragment_label">Home Fragment</string>
+    <string name="difficulties_fragment_label">Difficulties Fragment</string>
+    <string name="game_fragment_label">Game Fragment</string>
+    <string name="rules_fragment_label">Rules Fragment</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="rules">Button</string>
-    <string name="back">Zurück</string>
+    <string name="button_play">Spielen</string>
+    <string name="button_rules">Regeln</string>
     <string name="button_easy">Leicht</string>
     <string name="button_intermediate">Mittel</string>
     <string name="button_hard">Schwer</string>
-    <string name="button_tipp">Tipp</string>
+    <string name="button_back">Zurück</string>
+    <string name="button_hint">Tipp</string>
     <string name="button_skip">Nächstes</string>
+    <string name="rules">Regeln\n1) foo\n2) foo\n…</string>
 </resources>

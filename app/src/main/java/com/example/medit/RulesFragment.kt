@@ -20,8 +20,8 @@ class RulesFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        view.findViewById<Button>(R.id.button2).setOnClickListener {
-            findNavController().navigate(R.id.action_RulesFragment_to_FirstFragment)
+        view.findViewById<Button>(R.id.button_back).setOnClickListener {
+            findNavController().navigate(R.id.action_RulesFragment_to_HomeFragment)
         }
     }
 }

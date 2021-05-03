@@ -22,13 +22,13 @@ class GameFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         //tips
-        view.findViewById<Button>(R.id.button5).setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_difficultiesFragment) //TODO FIX_ME
+        view.findViewById<Button>(R.id.button_hint).setOnClickListener {
+            findNavController().navigate(R.id.action_HomeFragment_to_DifficultiesFragment) //TODO FIX_ME
         }
 
         //skip
-        view.findViewById<Button>(R.id.button6).setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_rulesFragment) //TODO FIX_ME
+        view.findViewById<Button>(R.id.button_next).setOnClickListener {
+            findNavController().navigate(R.id.action_HomeFragment_to_RulesFragment) //TODO FIX_ME
         }
     }
 }
