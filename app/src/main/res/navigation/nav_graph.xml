@@ -14,6 +14,12 @@
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_rulesFragment"
+            app:destination="@id/RulesFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_difficultiesFragment"
+            app:destination="@id/difficultiesFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -25,4 +31,26 @@
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/RulesFragment"
+        android:name="com.example.medit.RulesFragment"
+        android:label="fragment_rules"
+        tools:layout="@layout/fragment_rules" >
+        <action
+            android:id="@+id/action_RulesFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/difficultiesFragment"
+        android:name="com.example.medit.DifficultiesFragment"
+        android:label="fragment_difficulties"
+        tools:layout="@layout/fragment_difficulties" >
+        <action
+            android:id="@+id/action_difficultiesFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.medit.GameFragment"
+        android:label="GameFragment" />
 </navigation>
