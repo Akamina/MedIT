@@ -20,16 +20,16 @@ class DifficultiesFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        view.findViewById<Button>(R.id.button).setOnClickListener {
-            findNavController().navigate(R.id.action_difficultiesFragment_to_gameFragment)
+        view.findViewById<Button>(R.id.button_easy).setOnClickListener {
+            findNavController().navigate(R.id.action_DifficultiesFragment_to_GameFragment)
         }
 
-        view.findViewById<Button>(R.id.button3).setOnClickListener {
-            findNavController().navigate(R.id.action_difficultiesFragment_to_gameFragment)
+        view.findViewById<Button>(R.id.button_intermediate).setOnClickListener {
+            findNavController().navigate(R.id.action_DifficultiesFragment_to_GameFragment)
         }
 
-        view.findViewById<Button>(R.id.button4).setOnClickListener {
-            findNavController().navigate(R.id.action_difficultiesFragment_to_gameFragment)
+        view.findViewById<Button>(R.id.button_hard).setOnClickListener {
+            findNavController().navigate(R.id.action_DifficultiesFragment_to_GameFragment)
         }
     }
 }

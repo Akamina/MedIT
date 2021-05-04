@@ -3,54 +3,42 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/HomeFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.medit.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        android:id="@+id/HomeFragment"
+        android:name="com.example.medit.HomeFragment"
+        android:label="@string/home_fragment_label"
+        tools:layout="@layout/fragment_home">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
-        <action
-            android:id="@+id/action_FirstFragment_to_rulesFragment"
+            android:id="@+id/action_HomeFragment_to_RulesFragment"
             app:destination="@id/RulesFragment" />
         <action
-            android:id="@+id/action_FirstFragment_to_difficultiesFragment"
-            app:destination="@id/difficultiesFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.medit.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
-
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/action_HomeFragment_to_DifficultiesFragment"
+            app:destination="@id/DifficultiesFragment" />
     </fragment>
     <fragment
         android:id="@+id/RulesFragment"
         android:name="com.example.medit.RulesFragment"
-        android:label="fragment_rules"
-        tools:layout="@layout/fragment_rules" >
+        android:label="@string/rules_fragment_label"
+        tools:layout="@layout/fragment_rules">
         <action
-            android:id="@+id/action_RulesFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/action_RulesFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
     </fragment>
     <fragment
-        android:id="@+id/difficultiesFragment"
+        android:id="@+id/DifficultiesFragment"
         android:name="com.example.medit.DifficultiesFragment"
-        android:label="fragment_difficulties"
-        tools:layout="@layout/fragment_difficulties" >
+        android:label="@string/difficulties_fragment_label"
+        tools:layout="@layout/fragment_difficulties">
         <action
-            android:id="@+id/action_difficultiesFragment_to_gameFragment"
-            app:destination="@id/gameFragment" />
+            android:id="@+id/action_DifficultiesFragment_to_GameFragment"
+            app:destination="@id/GameFragment" />
     </fragment>
     <fragment
-        android:id="@+id/gameFragment"
+        android:id="@+id/GameFragment"
         android:name="com.example.medit.GameFragment"
-        android:label="GameFragment" />
+        android:label="@string/game_fragment_label"
+        tools:layout="@layout/fragment_game" />
 </navigation>
